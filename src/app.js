@@ -1,6 +1,8 @@
 import * as React from 'react'
 import '../public/globals.css'
 import { FlexCol } from './utils'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { Card, Button } from 'react-bootstrap'
 
 export var App = () => {
   return (
@@ -22,6 +24,14 @@ export var App = () => {
           height: 453,
         }}
       ></img>
+      <Card style={{ width: '18rem', marginTop: '20px' }}>
+        <Card.Img variant='top' src='https://via.placeholder.com/150' />
+        <Card.Body>
+          <Card.Title>John Doe</Card.Title>
+          <Card.Text>Software Engineer</Card.Text>
+          <Button variant='primary'>Contact</Button>
+        </Card.Body>
+      </Card>
     </FlexCol>
   )
 }
