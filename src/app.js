@@ -5,6 +5,16 @@ import '../public/bootstrap.min.css'
 import { Card, Button } from './react-bootstrap'
 
 export var App = () => {
+  React.useEffect(() => {
+    if (!document.getElementById('bootstrap-css')) {
+      const link = document.createElement('link');
+      link.id = 'bootstrap-css';
+      link.rel = 'stylesheet';
+      link.href = 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css';
+      document.head.appendChild(link);
+    }
+  }, []);
+
   return (
     <FlexCol
       style={{
