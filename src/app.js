@@ -1,7 +1,7 @@
 import * as React from 'react'
 import '../public/globals.css'
 import { FlexCol } from './utils'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import '../public/bootstrap.min.css'
 import { Card, Button } from 'react-bootstrap'
 
 export var App = () => {
